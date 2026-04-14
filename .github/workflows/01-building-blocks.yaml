@@ -12,8 +12,8 @@ jobs:
     steps:
        - name: Fail Step
          run: |
-          "echo Fail State"
-           exit 1      
+          echo "Fail State"
+          exit 1      
 
 
     
