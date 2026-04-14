@@ -10,10 +10,12 @@ jobs:
   say-goodbye:
     runs-on: ubuntu-latest
     steps:
-       - name: Fail Step
+       - name: Fix Fail Step
          run: |
           echo "Fail State"
-          exit 1      
+          exit 0  
+       - name: Goodbye
+         run: echo "Good Bye"
 
 
     
