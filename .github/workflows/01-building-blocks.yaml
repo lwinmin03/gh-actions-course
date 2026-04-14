@@ -7,6 +7,14 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, !World"
+  say-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Fail Step
+         run: |
+          "echo Fail State"
+           exit 1      
+
 
     
     
