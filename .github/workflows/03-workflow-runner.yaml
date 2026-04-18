@@ -5,9 +5,8 @@ on:
       
 jobs:
     show-runner:
-      runs-on: windows-latest
+      runs-on: macos-latest
       steps:
-        - name: Window Runner
-          shell: bash
+        - name: Runner
           run: runner " ${{runner.os}} "
         
