@@ -8,7 +8,7 @@ jobs:
       runs-on: windows-latest
       steps:
         - name: Window Runner
-          shell: base
+          shell: bash
           run: runner " ${{runner.os}} "
         - name: Macs Runner
           run: runner " ${{runner.os}} "
