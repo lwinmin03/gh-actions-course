@@ -10,5 +10,4 @@ jobs:
         - name: Window Runner
           shell: bash
           run: runner " ${{runner.os}} "
-        - name: Macs Runner
-          run: runner " ${{runner.os}} "
+        
