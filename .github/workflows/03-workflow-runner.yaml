@@ -5,7 +5,10 @@ on:
       
 jobs:
     show-runner:
-      runs-on: windows-sever-latest
+      runs-on: windows-latest
       steps:
-        - name: Show the runner
+        - name: Window Runner
+          shell: base
+          run: runner " $RUNNER_OS "
+        - name: Macs Runner
           run: runner " $RUNNER_OS "
