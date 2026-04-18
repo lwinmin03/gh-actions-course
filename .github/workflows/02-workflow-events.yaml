@@ -1,0 +1,13 @@
+name: 02 - workflow -events
+on: 
+    - push
+    - workflow_dispatch
+jobs:
+ test:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Show The Trigger
+      run: echo "Current Trigger ${{github.event_name}}"
+        
+
+    
