@@ -1,0 +1,11 @@
+name: 03-workflow-runner
+on: 
+    - pull_request
+    - workflow_dispatch
+      
+jobs:
+    show-runner:
+      runs-on: windows-sever-latest
+      steps:
+        - name: Show the runner
+          run: runner " $RUNNER_OS "
