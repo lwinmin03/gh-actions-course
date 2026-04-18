@@ -5,7 +5,8 @@ on:
       
 jobs:
     show-runner:
-      runs-on: windows-sever-latest
+      runs-on: macos-latest
       steps:
-        - name: Show the runner
-          run: runner " $RUNNER_OS "
+        - name: Runner
+          run: echo " ${{runner.os}} "
+        
