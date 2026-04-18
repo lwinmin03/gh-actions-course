@@ -8,5 +8,5 @@ jobs:
       runs-on: macos-latest
       steps:
         - name: Runner
-          run: runner " ${{runner.os}} "
+          run: echo " ${{runner.os}} "
         
