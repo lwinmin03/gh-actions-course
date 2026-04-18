@@ -9,6 +9,6 @@ jobs:
       steps:
         - name: Window Runner
           shell: base
-          run: runner " $RUNNER_OS "
+          run: runner " ${{runner.os}} "
         - name: Macs Runner
-          run: runner " $RUNNER_OS "
+          run: runner " ${{runner.os}} "
